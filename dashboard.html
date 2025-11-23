@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard - Pharmistock</title>
+  <script src="app.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <div class="p-6">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Dashboard</h1>
+      <div>
+        <button id="btnLogout" class="px-3 py-1 border rounded">Logout</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 mt-6">
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Central Items</h3>
+        <div id="centralCount" class="text-3xl mt-2">...</div>
+      </div>
+
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Pending BONS</h3>
+        <div id="pendingBons" class="text-3xl mt-2">...</div>
+      </div>
+
+      <div class="p-4 bg-white rounded shadow">
+        <h3 class="font-semibold">Low stock</h3>
+        <ul id="lowStock" class="mt-2 text-sm"></ul>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <a href="bc.html" class="px-3 py-2 bg-indigo-600 text-white rounded">Créer Bon de commande</a>
+      <a href="stock.html" class="px-3 py-2 bg-green-600 text-white rounded ml-2">Stock</a>
+      <a href="prescriptions.html" class="px-3 py-2 bg-yellow-600 text-white rounded ml-2">Prescriptions</a>
+      <a href="admin.html" class="px-3 py-2 border rounded ml-2">Admin</a>
+    </div>
+  </div>
+</body>
+</html>
