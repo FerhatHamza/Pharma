@@ -1,5 +1,5 @@
 // app.js - simple client for the worker API
-const WORKER_BASE = "https://YOUR-WORKER.workers.dev"; // <-- CHANGE
+const WORKER_BASE = "https://pharmacis-api.ferhathamza17.workers.dev/"; // <-- CHANGE
 
 function authHeaders() {
   const token = localStorage.getItem("token");
